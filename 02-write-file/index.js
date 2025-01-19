@@ -20,7 +20,7 @@ const stopProcess = () => {
 };
 
 rl.on('line', (input) => {
-  if (input.toLowerCase() === 'stop') {
+  if (input.toLowerCase() === 'exit') {
     stopProcess();
   }
   writeStream.write(input + '\n');
