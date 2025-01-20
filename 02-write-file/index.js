@@ -11,7 +11,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log('\nHi! Enter your text. Type "stop" or "ctrl + c" to end.\n');
+console.log('\nHi! Enter your text. Type "exit" or "ctrl + c" to end.\n');
 
 const stopProcess = () => {
   console.log('\nSee you later!\n');
