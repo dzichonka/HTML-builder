@@ -14,9 +14,5 @@ readStream.on('end', () => {
 });
 
 readStream.on('error', (err) => {
-  if (err.code === 'ENOENT') {
-    console.error(`The file "${filePath}" was not found.`);
-  } else {
-    console.error(`Uh! Oh! You made a mistake: ${err.message}`);
-  }
+  console.error(`Uh! Oh! You made a mistake: ${err.message}`);
 });
